@@ -97,7 +97,7 @@ const Projects = () => {
               <p className="text-white/70" >
                 {project.description}
               </p>
-              <ul className="flex gap-5" >
+              <ul className="flex flex-wrap gap-5" >
                 {project.stack.map((item, index) => {
                   return (<li key={index} className="text-xl text-teal-400">
                     {item.name}
