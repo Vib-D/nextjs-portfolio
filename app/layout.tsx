@@ -23,9 +23,6 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }) {
   return (       
     <html lang="en">
-      <Head>
-        <link rel="icon" href="/favicon.ico" sizes="2x2"/>  {/* Add favicon here */}
-      </Head>
       <body className={jetbrains_Mono.variable}>
         <Header />
         

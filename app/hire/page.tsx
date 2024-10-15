@@ -99,16 +99,16 @@ const Hire = () => {
               </h3>
               {/* INput */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 " >
-                <Input name='name' type='text' placeholder='First Name' value={form.name} onChange={handleChange} />
+                <Input name="name" type="text" placeholder='First Name' value={form.name} onChange={handleChange} />
                 <Input name='lastname' type='text' placeholder='Last Name' value={form.lastname} onChange={handleChange} />
                 <Input name='email' type='email' placeholder='Email' value={form.email} onChange={handleChange} />
                 <Input name='phone' type='number' placeholder='Phone' value={form.phone} onChange={handleChange} />
               </div>
               <div className="grid grid-cols-1" >
-                  <Input name='company' type='text' placeholder='Company Name' value={form.phone} onChange={handleChange} />
-                </div>
+                <Input name='company' type='text' placeholder='Company Name' value={form.phone} onChange={handleChange} />
+              </div>
               {/* textarea */}
-              <Textarea name='message' type='text' placeholder='Type your message here...' className='h-[200px]' value={form.message} onChange={handleChange} />
+              <Textarea name='message' placeholder='Type your message here...' className='h-[200px]' value={form.message} onChange={handleChange} />
               <Button size='md' className='max-w-40 hover:bg-teal-900 hover:text-teal-100 border rounded-2xl border-teal-400 '>
                 Send Message
               </Button>

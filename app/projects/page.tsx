@@ -5,10 +5,11 @@ import React, { useRef, useState } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
 import { BsArrowUpRight, BsGithub } from 'react-icons/bs'
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../../components/ui/tooltip'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@radix-ui/react-tooltip'
 import Link from "next/link"
 import Image from "next/image"
 import SliderButton from "../../components/ui/SliderButton"
+
 
 
 {/* Project assets */}
@@ -156,8 +157,7 @@ const Projects = () => {
               })}
               {/* slider buttons */}
               <SliderButton containerStyles='flex gap-2 absolute right-0 bottom-[calc(50%_-_20px)] xl:bottom-50 z-20 w-full justify-between  xl:justify-none'
-                btnStyles='bg-teal-400 hover:bg-teal-900 hover:text-teal-100 text-primary transition-all text-[22px] w-[40px] h-[40px] rounded-l rounded-r flex justify-center items-center '
-              />
+              btnStyles='bg-teal-400 hover:bg-teal-900 hover:text-teal-100 text-primary transition-all text-[22px] w-[40px] h-[40px] rounded-l rounded-r flex justify-center items-center ' iconsStyles={undefined}              />
             </Swiper>
           </div>
         </div>

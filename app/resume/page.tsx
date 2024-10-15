@@ -117,8 +117,8 @@ const skills = {
 }
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../components/ui/tabs';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../../components/ui/tooltip';
-import { ScrollArea } from '../../components/ui/scroll-area'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@radix-ui/react-tooltip';
+import { ScrollArea } from '@radix-ui/react-scroll-area'
 import { motion } from "framer-motion";
 
 
@@ -139,7 +139,7 @@ const Resume = () => {
           {/*Content */}
           <div className="min-h-[55vh] w-full " >
             {/* experience */}
-            <TabsContent value='experience' className='w-full ' >
+            <TabsContent value='experience' className='w-full' >
               <div className="flex flex-col gap-[30px] text-center xl:text-left " >
                 <h3 className="text-4xl font-bold" >
                   {experience.title}

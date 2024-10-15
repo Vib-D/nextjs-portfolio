@@ -105,7 +105,7 @@ const Contact = () => {
                 <Input name='phone' type='number' placeholder='Phone' value={form.phone} onChange={handleChange} />
               </div>
               {/* textarea */}
-              <Textarea name='message' type='text' placeholder='Type your message here...' className='h-[200px]' value={form.message} onChange={handleChange} />
+              <Textarea name='message' placeholder='Type your message here...' className='h-[200px]' value={form.message} onChange={handleChange} />
               <Button size='md' className='max-w-40 hover:bg-teal-900 hover:text-teal-100 border rounded-2xl border-teal-400 '>
                 Send Message
               </Button>
