@@ -20,7 +20,7 @@ const Home = () => {
             </p>
             {/* Buttons and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href="" download="Vibhor_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1CFlfraXvL_Cl5grA7Y6nSSYbDTkqNRZS/view?usp=share_link" download="Vibhor_Resume.pdf" target="_blank" rel="noopener noreferrer">
                 <Button variant='outline' size='lg' className='flex items-center mt-5 gap-2'>
                   <span> Download Resume </span>
                   <FiDownload className="text-xl" />
