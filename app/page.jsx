@@ -20,13 +20,13 @@ const Home = () => {
             </p>
             {/* Buttons and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href="https://drive.google.com/file/d/1CFlfraXvL_Cl5grA7Y6nSSYbDTkqNRZS/view?usp=share_link" download="Vibhor_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1eRxllThz-Bu2QL660fpll-25y367I2AQ/view?usp=sharing" download="Vibhor_Resume.pdf" target="_blank" rel="noopener noreferrer">
                 <Button variant='outline' size='lg' className='flex items-center mt-5 gap-2'>
                   <span> Download Resume </span>
                   <FiDownload className="text-xl" />
                 </Button>
               </a>
-              <div className="mb-8  xl:mb-0">
+              <div className="mb-12 xl:mb-0">
                 <Socials containerStyles="flex gap-6" iconStyles='w-10 h-10 mt-5 border-[1.5px] border-teal-400 rounded-full flex justify-center items-center text-teal-400 hover:bg-teal-900 hover:text-teal-100 hover:transition-all duration-500' />
               </div>
             </div>

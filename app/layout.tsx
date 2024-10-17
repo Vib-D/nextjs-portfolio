@@ -2,7 +2,7 @@ import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
 import PageTransition from '../components/PageTransition';
-import Head from "next/head";
+import logo from '../favicon.ico';
 
 import { IconBase } from "react-icons";
 import {Metadata} from 'next';
@@ -16,13 +16,16 @@ const jetbrains_Mono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: {
     default: 'Vibhor | Portfolio',
-    template: ''
+    template: '',
   },
 };
 
 export default function RootLayout({ children }) {
   return (       
     <html lang="en">
+      <head>
+        <link rel="icon" href='app/favicon.ico' type="image/x-icon" sizes="16x16"/>
+      </head>
       <body className={jetbrains_Mono.variable}>
         <Header />
         
