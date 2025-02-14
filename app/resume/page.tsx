@@ -38,6 +38,11 @@ const experience = {
   title: "My Experience",
   items: [
     {
+      company: "Beebom Media Pvt. Ltd.",
+      position: "Product Data Engineer",
+      duration: "Nov 2024 - Present"
+    },
+    {
       company: "Tata Consultancy Services",
       position: "Associate System Engineer",
       duration: "Upcoming"
