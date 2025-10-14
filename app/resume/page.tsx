@@ -1,12 +1,12 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaJava, FaNodeJs } from "react-icons/fa"
-import { SiTailwindcss, SiNextdotjs, SiMysql, SiMongodb, SiCplusplus } from 'react-icons/si'
+import { FaHtml5, FaCss3, FaJs, FaReact, FaJava, FaNodeJs, FaPython } from "react-icons/fa"
+import { SiTailwindcss, SiNextdotjs, SiMysql, SiMongodb, SiCplusplus, SiSpringboot, SiTypescript, SiAngular, SiGit, SiKubernetes, SiPostman } from 'react-icons/si'
 
 //about data
 const about = {
   title: "About Me",
-  description: "I'm a passionate and dedicated software developer with a strong background in web development.",
+  description: "Full-stack software developer and Assistant System Engineer at TCS, skilled in building scalable, secure, and responsive web applications using React, Angular, Node.js, Next.js, Spring Boot, and MongoDB.",
   info: [
     {
       fieldName: "Name",
@@ -38,14 +38,14 @@ const experience = {
   title: "My Experience",
   items: [
     {
-      company: "Beebom Media Pvt. Ltd.",
-      position: "Product Data Engineer",
-      duration: "Nov 2024 - Present"
-    },
-    {
       company: "Tata Consultancy Services",
       position: "Associate System Engineer",
-      duration: "Upcoming"
+      duration: "May 2025 - Present"
+    },
+    {
+      company: "Beebom Media Pvt. Ltd.",
+      position: "Product Data Engineer",
+      duration: "Nov 2024 - May 2025"
     },
     {
       company: "Merchit Technologies Pvt. Ltd.",
@@ -83,24 +83,32 @@ const skills = {
       name: "Java"
     },
     {
-      icon: <SiCplusplus/>,
+      icon: <SiCplusplus />,
       name: "C++"
     },
     {
-      icon: <FaHtml5 />,
-      name: "HTML5"
+      icon: <FaPython />,
+      name: "Python"
     },
     {
-      icon: <SiTailwindcss />,
-      name: "TailwindCSS"
+      icon: <SiSpringboot />,
+      name: "Spring Boot"
     },
     {
       icon: <FaJs />,
       name: "JavaScript"
     },
     {
+      icon: <SiTypescript />,
+      name: "TypeScript"
+    },
+    {
       icon: <FaReact />,
       name: "React"
+    },
+    {
+      icon: <SiAngular />,
+      name: "Angular"
     },
     {
       icon: <FaNodeJs />,
@@ -117,6 +125,18 @@ const skills = {
     {
       icon: <SiMongodb />,
       name: "MongoDB"
+    },
+    {
+      icon: <SiGit />,
+      name: "Git"
+    },
+    {
+      icon: <SiKubernetes />,
+      name: "Kubernetes"
+    },
+    {
+      icon: <SiPostman />,
+      name: "Postman"
     },
   ]
 }
@@ -173,7 +193,7 @@ const Resume = () => {
 
             {/* education */}
             <TabsContent value='education' className='w-full '>
-            <div className="flex flex-col gap-[30px] text-center xl:text-left " >
+              <div className="flex flex-col gap-[30px] text-center xl:text-left " >
                 <h3 className="text-4xl font-bold" >
                   {education.title}
                 </h3>
@@ -223,7 +243,7 @@ const Resume = () => {
                           </TooltipContent>
                         </Tooltip>
                       </TooltipProvider>
-                      </li>)
+                    </li>)
                   })}
                 </ul>
               </div>
@@ -239,8 +259,8 @@ const Resume = () => {
                 <h3 className="text-4xl font-bold" >{about.title}</h3>
                 <p className="max-w-[600px] text-white/70 text-lg mx-auto xl:mx-0 " >{about.description}</p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[720px] mx-auto xl:mx-0" >
-                  {about.info.map((item, index)=> {
-                    return ( <li key={index} className="flex items-center justify-center xl:justify-start gap-4" >
+                  {about.info.map((item, index) => {
+                    return (<li key={index} className="flex items-center justify-center xl:justify-start gap-4" >
                       <span className="text-white/70" >{item.fieldName}:  </span>
                       <span className="text-xl" >{item.fieldValue}</span>
                     </li>

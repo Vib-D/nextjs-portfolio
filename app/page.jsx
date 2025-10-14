@@ -15,12 +15,12 @@ const Home = () => {
             <span className="text-xl text-white/80 ">Software Developer</span>
             <h1 className="h1">Hello I&apos;m  <br /> <span className="text-teal-400">Vibhor Dass</span></h1>
             <p className="max-w-[550px] mb-9 mt-6 text-white/80" >
-              Passionate developer skilled in transforming ideas into impactful web applications. <br />
+              Full-stack software developer and Assistant System Engineer at TCS. <br />
               Proficient in both front-end and back-end development, with a focus on creating seamless, user-friendly digital experiences.
             </p>
             {/* Buttons and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href="https://drive.google.com/file/d/1CqV0nw_0llZevzHmhviAibpmOgVhHSci/view?usp=sharing" download="Vibhor_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1U6bDJk3mNCGTFQmLZOTblJQF_HXZ0gnE/view?usp=sharing" download="Vibhor_Resume.pdf" target="_blank" rel="noopener noreferrer">
                 <Button variant='outline' size='lg' className='flex items-center mt-5 gap-2'>
                   <span> Download Resume </span>
                   <FiDownload className="text-xl" />
