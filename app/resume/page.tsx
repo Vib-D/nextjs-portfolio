@@ -1,12 +1,12 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaJava, FaNodeJs, FaPython } from "react-icons/fa"
-import { SiTailwindcss, SiNextdotjs, SiMysql, SiMongodb, SiCplusplus, SiSpringboot, SiTypescript, SiAngular, SiGit, SiKubernetes, SiPostman } from 'react-icons/si'
+import { FaHtml5, FaCss3, FaJs, FaReact, FaJava, FaNodeJs, FaPython, FaAws } from "react-icons/fa"
+import { SiTailwindcss, SiNextdotjs, SiMysql, SiMongodb, SiCplusplus, SiSpringboot, SiTypescript, SiAngular, SiGit, SiKubernetes, SiPostman, SiPlaywright } from 'react-icons/si'
 
 //about data
 const about = {
   title: "About Me",
-  description: "Full-stack software developer and Assistant System Engineer at TCS, skilled in building scalable, secure, and responsive web applications using React, Angular, Node.js, Next.js, Spring Boot, and MongoDB.",
+  description: "Full-stack software developer and Automation Engineer at TCS. Proficient in both front-end and back-end development, with a focus on creating seamless, user-friendly digital experiences.",
   info: [
     {
       fieldName: "Name",
@@ -39,12 +39,12 @@ const experience = {
   items: [
     {
       company: "Tata Consultancy Services",
-      position: "Associate System Engineer",
+      position: "Automation Engineer",
       duration: "May 2025 - Present"
     },
     {
       company: "Beebom Media Pvt. Ltd.",
-      position: "Product Data Engineer",
+      position: "Product Data Executive",
       duration: "Nov 2024 - May 2025"
     },
     {
@@ -83,6 +83,14 @@ const skills = {
       name: "Java"
     },
     {
+      icon: <FaJs />,
+      name: "JavaScript"
+    },
+    {
+      icon: <SiTypescript />,
+      name: "TypeScript"
+    },
+    {
       icon: <SiCplusplus />,
       name: "C++"
     },
@@ -91,16 +99,16 @@ const skills = {
       name: "Python"
     },
     {
+      icon: <FaAws />,
+      name: "AWS"
+    },
+    {
+      icon: <SiPlaywright />,
+      name: "Playwright"
+    },
+    {
       icon: <SiSpringboot />,
       name: "Spring Boot"
-    },
-    {
-      icon: <FaJs />,
-      name: "JavaScript"
-    },
-    {
-      icon: <SiTypescript />,
-      name: "TypeScript"
     },
     {
       icon: <FaReact />,
@@ -230,22 +238,24 @@ const Resume = () => {
                 <div className="flex flex-col gap-[30px] text-center xl:text-left" >
                   <h3 className="text-4xl font-bold" >{skills.title}</h3>
                 </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[10px] gap-4" >
-                  {skills.skillList.map((skill, index) => {
-                    return (<li key={index} >
-                      <TooltipProvider delayDuration={50} >
-                        <Tooltip>
-                          <TooltipTrigger className="w-full h-[130px] bg-[#232329] rounded-xl flex justify-center items-center group" >
-                            <div className="text-6xl group-hover:text-teal-400" >{skill.icon}</div>
-                          </TooltipTrigger>
-                          <TooltipContent >
-                            <p>{skill.name}</p>
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
-                    </li>)
-                  })}
-                </ul>
+                <ScrollArea className='h-[400px]' >
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[10px] gap-4" >
+                    {skills.skillList.map((skill, index) => {
+                      return (<li key={index} >
+                        <TooltipProvider delayDuration={50} >
+                          <Tooltip>
+                            <TooltipTrigger className="w-full h-[130px] bg-[#232329] rounded-xl flex justify-center items-center group" >
+                              <div className="text-6xl group-hover:text-teal-400" >{skill.icon}</div>
+                            </TooltipTrigger>
+                            <TooltipContent >
+                              <p>{skill.name}</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      </li>)
+                    })}
+                  </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
 
